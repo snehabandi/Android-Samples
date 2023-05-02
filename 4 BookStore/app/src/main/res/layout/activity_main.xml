@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffec8b"
+    tools:context="com.example.sneha.bookstore.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/store_image"
+        android:layout_width="match_parent"
+        android:layout_height = "200dp"
+        android:src = "@drawable/bookstore_image"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Abode!"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="0dp"
+        />
+    <TextView
+        android:id="@+id/name_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="where knowledge resides!"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        />
+    <TextView
+        android:id="@+id/short_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_image"
+        android:text="Book Store in Pune,India"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:paddingBottom="0dp"
+        />
+
+    <ImageView
+        android:id="@+id/rating_image"
+        android:layout_width="100dp"
+        android:layout_height = "24dp"
+        android:src = "@drawable/rating_icon"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@+id/rating"
+        android:layout_below="@+id/short_description"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating "
+        android:textSize="20dp"
+        android:layout_below="@id/short_description"
+        android:layout_marginLeft="8dp"
+        android:paddingRight="8dp"
+        />
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="20dp"
+        android:layout_height = "20dp"
+        android:src = "@drawable/location_icon"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/rating_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16/B Lane no.4, karvennagar,Pune "
+        android:textSize="20dp"
+        android:layout_below="@id/rating_image"
+        android:layout_toRightOf="@+id/location_image"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif"
+        />
+
+
+    <ImageView
+        android:id="@+id/timing_image"
+        android:layout_width="20dp"
+        android:layout_height = "20dp"
+        android:src = "@drawable/clock_icon"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/location_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/timing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open 9:00am -9:00 pm "
+        android:textSize="20dp"
+        android:layout_below="@id/location_text"
+        android:layout_toRightOf="@+id/timing_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        />
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="20dp"
+        android:layout_height = "20dp"
+        android:src = "@drawable/contact_us_icon"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/timing_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/contact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call @ 022-2456387, 9856742111 "
+        android:textSize="20dp"
+        android:layout_below="@id/timing_text"
+        android:layout_toRightOf="@+id/contact_image"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        />
+    <ImageView
+        android:id="@+id/about_store_image"
+        android:layout_width="20dp"
+        android:layout_height = "20dp"
+        android:src = "@drawable/about_store_icon"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/contact_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/about_store_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/about_store_image"
+        android:text="Book abode is Pune's one of the oldest book stores shelving a wide range of world famous books ranging from classics to modern style books!"
+        android:textSize="25sp"
+        android:layout_below="@id/contact_image"
+        android:fontFamily="cursive"
+        android:textColor="#2b1459"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width= "wrap_content"
+        android:layout_below="@id/about_store_text"
+        android:layout_centerHorizontal="true"
+        android:text=" Know more "
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+</RelativeLayout>

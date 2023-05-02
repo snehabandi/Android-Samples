@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sneha.birthdaycard.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src = "@drawable/silver2"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src = "@drawable/cake"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:padding="64sp" />
+
+    <TextView
+        android:id="@+id/text_view_birthday_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday Nikhil !"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/black"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(My sweet mad brother ;)"
+        android:textSize="28sp"
+        android:fontFamily="cursive"
+        android:layout_below="@id/text_view_birthday_message"
+        android:layout_marginLeft="16dp"
+        android:textColor ="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Your Sis"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:textColor ="@android:color/black"
+        android:textStyle = "bold|italic"
+       />
+
+</RelativeLayout>

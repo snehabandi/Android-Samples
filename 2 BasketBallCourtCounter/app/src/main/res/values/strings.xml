@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Basket Ball Court Counter</string>
+    <string name="tv_team_a">Team A</string>
+    <string name="tv_team_b">Team B</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+</resources>
